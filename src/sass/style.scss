@@ -1,0 +1,111 @@
+@use 'components';
+@use 'colors';
+@use 'burgerMenu';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 300vh;
+	background-color: colors.$background;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.turnOffScroll {
+	overflow-y: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+// ====== NAV ======
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2em 1.5em;
+		background-color: #fff;
+	}
+
+	&__logo span {
+		display: block;
+		color: #000;
+		font-size: 3.6rem;
+	}
+
+	&__menu {
+		a {
+			font-weight: 600;
+			font-size: 2.4rem;
+			color: #000;
+			text-transform: uppercase;
+
+			&:not(&:last-child) {
+				margin-bottom: 2em;
+			}
+		}
+
+		&--mobile {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: #0e0d0d;
+			clip-path: circle(0% at 100% 0%);
+			transition: clip-path 0.3s ease-in-out;
+			z-index: -1;
+
+			a {
+				color: white;
+			}
+
+			&--active {
+				clip-path: circle(150% at 100% 0%);
+			}
+		}
+
+		&--desktop {
+			display: none;
+		}
+	}
+}
+
+@import 'small';
+@import 'medium';
+@import 'large';

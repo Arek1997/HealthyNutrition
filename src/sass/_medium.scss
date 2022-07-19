@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+	.nav {
+		&__container {
+			padding: 2.7em;
+		}
+
+		&__hamburger {
+			display: none;
+		}
+
+		&__menu {
+			a {
+				font-weight: 400;
+
+				&:not(&:last-child) {
+					margin-bottom: 0em;
+				}
+			}
+
+			&--mobile {
+				display: none;
+			}
+
+			&--desktop {
+				display: flex;
+				column-gap: 3rem;
+
+				a {
+					transition: color 0.3s;
+
+					&:hover {
+						color: colors.$leadingColor;
+					}
+				}
+			}
+		}
+	}
+}

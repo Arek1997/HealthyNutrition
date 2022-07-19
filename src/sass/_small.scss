@@ -1,0 +1,14 @@
+@media (min-width: 280px) and (orientation: landscape) {
+	.nav {
+		&__menu {
+			a {
+				&:not(&:last-child) {
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+}
