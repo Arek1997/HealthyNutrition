@@ -150,17 +150,30 @@ button {
 		background-color: colors.$white;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		z-index: 10;
+	}
+}
 
-		h1 {
-			margin-bottom: 1.5em;
-			font-size: 2.2rem;
+// ====== Be active ======
+
+.be-active {
+	overflow-x: none;
+
+	&__text {
+		padding: 2em 1em;
+	}
+
+	&__img {
+		position: relative;
+
+		&::before {
+			content: '';
+			top: 40px;
+			left: 20px;
+			@include mixins.square(100%, 100%);
+			z-index: -1;
 		}
-
-		p {
-			margin-bottom: 3em;
-			font-size: 1.8rem;
-			line-height: 1.5;
-			color: colors.$textColor;
+		img {
+			width: 100%;
 		}
 	}
 }

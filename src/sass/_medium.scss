@@ -57,4 +57,25 @@
 			left: 80px;
 		}
 	}
+
+	.be-active {
+		&__text {
+			margin-bottom: 7em;
+
+			.heading {
+				font-size: 4rem;
+			}
+		}
+
+		&__img {
+			width: 80%;
+
+			&::before {
+				width: 60%;
+				height: 80%;
+				top: 190px;
+				left: 360px;
+			}
+		}
+	}
 }
