@@ -49,6 +49,31 @@
 			}
 		}
 	}
+
+	.advices {
+		&__container {
+			justify-content: center;
+
+			&::before {
+				height: 120%;
+				transform: translate(-50%, -50px);
+				z-index: -1;
+			}
+		}
+
+		&__img {
+			max-width: 550px;
+			width: 50%;
+
+			img {
+				height: 100%;
+			}
+		}
+
+		&__example {
+			max-width: 550px;
+		}
+	}
 }
 
 @media (min-width: 1200px) {

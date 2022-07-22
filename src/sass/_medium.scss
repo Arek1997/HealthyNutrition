@@ -78,4 +78,28 @@
 			}
 		}
 	}
+
+	.advices {
+		&__container {
+			display: flex;
+			align-items: center;
+			column-gap: 6rem;
+			padding: 2em;
+
+			&::before {
+				width: 30%;
+			}
+		}
+
+		&__img {
+			max-width: 350px;
+			margin-bottom: 0;
+			padding: 2em 0;
+			align-self: stretch;
+
+			img {
+				height: 100%;
+			}
+		}
+	}
 }

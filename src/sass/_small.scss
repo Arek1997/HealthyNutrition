@@ -65,4 +65,33 @@
 			}
 		}
 	}
+
+	.advices {
+		margin-top: 15em;
+
+		&__img {
+			img {
+				height: auto;
+			}
+		}
+
+		&__container {
+			&::before {
+				width: 60%;
+			}
+		}
+
+		&__example {
+			column-gap: 1rem;
+			padding-bottom: 3em;
+			margin-bottom: 3em;
+
+			.advices__icon {
+				img {
+					width: 65px;
+					height: 65px;
+				}
+			}
+		}
+	}
 }
