@@ -1,0 +1,8 @@
+@use 'colors';
+
+@mixin square($w, $h, $col: colors.$leadingColor) {
+	position: absolute;
+	width: $w;
+	height: $h;
+	background-color: $col;
+}

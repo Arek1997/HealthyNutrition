@@ -35,4 +35,26 @@
 			}
 		}
 	}
+
+	.header {
+		height: 1100px;
+
+		&__img {
+			&::before {
+				width: 70%;
+			}
+
+			&::after {
+				width: 90%;
+				height: 70%;
+				bottom: -100px;
+			}
+		}
+
+		&__text {
+			margin: 0;
+			top: -130px;
+			left: 80px;
+		}
+	}
 }

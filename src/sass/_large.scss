@@ -1,6 +1,52 @@
 @media (min-width: 992px) {
+	.header {
+		&__img {
+			&::before {
+				width: 50%;
+				left: 470px;
+			}
+
+			&::after {
+				width: 75%;
+				left: -60px;
+			}
+		}
+
+		&__text {
+			top: -200px;
+		}
+	}
 }
+
 @media (min-width: 1200px) {
+	.header {
+		&__img {
+			&::before {
+				left: 580px;
+			}
+
+			&::after {
+				width: 60%;
+			}
+		}
+	}
 }
+
 @media (min-width: 1400px) {
+	.header {
+		&__img {
+			&::before {
+				left: 650px;
+			}
+
+			&::after {
+				width: 50%;
+			}
+		}
+
+		&__text {
+			top: -300px;
+			left: 101px;
+		}
+	}
 }

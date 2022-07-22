@@ -17,4 +17,41 @@
 }
 
 @media (min-width: 576px) {
+	.header {
+		&__img {
+			height: auto;
+			max-height: 600px;
+
+			img {
+				max-height: 600px;
+			}
+
+			&::before {
+				width: 60%;
+				bottom: 43px;
+				left: 232px;
+			}
+
+			&::after {
+				width: 50%;
+				height: 100%;
+				bottom: -150px;
+				left: -30px;
+			}
+		}
+
+		&__text {
+			max-width: 400px;
+			margin: 0 auto;
+			padding: 4em 2em;
+
+			h1 {
+				font-size: 3rem;
+			}
+
+			p {
+				font-size: 2.2rem;
+			}
+		}
+	}
 }
