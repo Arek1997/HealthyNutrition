@@ -102,4 +102,44 @@
 			}
 		}
 	}
+
+	.cocktails {
+		&__container {
+			.decoration {
+				&--circle {
+					width: 220px;
+					height: 220px;
+					top: 28%;
+					right: -2%;
+					z-index: 1;
+				}
+
+				&--square {
+					bottom: 184px;
+					width: 75%;
+					height: 240px;
+					left: 153px;
+				}
+			}
+		}
+
+		&__img {
+			width: 60%;
+			margin-left: 6em;
+
+			&::before {
+				width: 160px;
+				height: 160px;
+			}
+
+			img {
+				height: 550px;
+			}
+		}
+
+		&__text {
+			top: -232px;
+			right: -208px;
+		}
+	}
 }

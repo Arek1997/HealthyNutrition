@@ -1,0 +1,17 @@
+@keyframes moveLeftRight {
+	from {
+		transform: translateX();
+	}
+	to {
+		transform: translateX(135%);
+	}
+}
+
+@keyframes moveUpDown {
+	from {
+		transform: translateY();
+	}
+	to {
+		transform: translateY(-100%);
+	}
+}

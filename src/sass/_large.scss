@@ -1,3 +1,5 @@
+@use 'animation';
+
 @media (min-width: 992px) {
 	.header {
 		&__img {
@@ -74,6 +76,41 @@
 			max-width: 550px;
 		}
 	}
+
+	.cocktails {
+		&__container {
+			padding-top: 5em;
+
+			.decoration {
+				&--circle {
+					top: 1%;
+					right: 2%;
+				}
+
+				&--square {
+					bottom: 534px;
+					width: 70%;
+					max-width: 700px;
+					height: 340px;
+					left: 257px;
+				}
+			}
+		}
+
+		&__img {
+			max-width: 450px;
+		}
+
+		&__text {
+			padding: 4em 3em;
+			top: -600px;
+			right: -408px;
+
+			.heading {
+				font-size: 4rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -106,6 +143,20 @@
 			}
 		}
 	}
+
+	.cocktails {
+		&__container {
+			.decoration {
+				&--circle {
+					right: 24%;
+				}
+			}
+		}
+
+		&__img {
+			max-width: 500px;
+		}
+	}
 }
 
 @media (min-width: 1400px) {
@@ -123,6 +174,24 @@
 		&__text {
 			top: -300px;
 			left: 101px;
+		}
+	}
+
+	.cocktails {
+		&__container {
+			.decoration {
+				&--circle {
+					animation: moveLeftRight 30s linear infinite alternate;
+				}
+			}
+		}
+
+		&__img {
+			&::before {
+				left: 232%;
+				bottom: -20%;
+				animation: moveUpDown 10s linear infinite alternate;
+			}
 		}
 	}
 }
