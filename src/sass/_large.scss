@@ -1,4 +1,8 @@
 @use 'animation';
+@use 'mixins';
+
+@include animation.moveUpDown(moveUpDown100, -100%);
+@include animation.moveUpDown(moveUpDown200, 200%);
 
 @media (min-width: 992px) {
 	.header {
@@ -78,6 +82,8 @@
 	}
 
 	.cocktails {
+		height: 1000px;
+
 		&__container {
 			padding-top: 5em;
 
@@ -109,6 +115,21 @@
 			.heading {
 				font-size: 4rem;
 			}
+		}
+	}
+
+	.bottom {
+		&__cards-box {
+			max-width: 1000px;
+			align-items: center;
+			justify-content: center;
+			gap: 3rem;
+			margin: 0 auto;
+		}
+
+		&__card {
+			max-width: 440px;
+			margin: 0;
 		}
 	}
 }
@@ -190,7 +211,26 @@
 			&::before {
 				left: 232%;
 				bottom: -20%;
-				animation: moveUpDown 10s linear infinite alternate;
+				// animation: moveUpDown 10s linear infinite alternate;
+				animation: moveUpDown100 10s linear infinite alternate;
+			}
+		}
+	}
+
+	.bottom {
+		&__images {
+			&::before {
+				animation: moveUpDown200 20s linear infinite alternate;
+			}
+
+			&::after {
+				content: '';
+				@include mixins.square(180px, 180px);
+				bottom: 30%;
+				right: 5%;
+				border-radius: 50%;
+				opacity: 0.3;
+				animation: moveUpDown100 20s linear infinite alternate;
 			}
 		}
 	}

@@ -7,11 +7,13 @@
 	}
 }
 
-@keyframes moveUpDown {
-	from {
-		transform: translateY();
-	}
-	to {
-		transform: translateY(-100%);
+@mixin moveUpDown($name, $value) {
+	@keyframes #{$name} {
+		from {
+			transform: translateY();
+		}
+		to {
+			transform: translateY($value);
+		}
 	}
 }

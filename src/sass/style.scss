@@ -301,6 +301,47 @@ button {
 	}
 }
 
+// ====== Bottom ======
+.bottom {
+	background-color: colors.$background;
+
+	&__container {
+		position: relative;
+	}
+
+	&__images {
+		img {
+			width: 100%;
+			max-width: 250px;
+			display: block;
+			margin: 0 auto 3em;
+		}
+	}
+
+	&__card {
+		// max-width: 280px;
+		padding: 2em;
+		margin: 0 auto 3em;
+		background-color: colors.$white;
+		@include mixins.boxShadow;
+		text-align: center;
+
+		img {
+			width: 60px;
+			height: 60px;
+			padding: 1.5em;
+			margin-bottom: 1em;
+			background-color: colors.$leadingColor;
+			border-radius: 50%;
+		}
+
+		h3 {
+			margin-bottom: 1em;
+			font-size: 2rem;
+		}
+	}
+}
+
 @import 'small';
 @import 'medium';
 @import 'large';

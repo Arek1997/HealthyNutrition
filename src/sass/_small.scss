@@ -1,3 +1,5 @@
+@use 'mixins';
+
 @media (max-width: 767px) and (orientation: landscape) {
 	.nav {
 		&__menu {
@@ -122,6 +124,42 @@
 			img {
 				height: auto;
 			}
+		}
+	}
+
+	.bottom {
+		&__images {
+			position: relative;
+
+			&::before {
+				content: '';
+				@include mixins.square(100px, 100px);
+				top: 5%;
+				left: 10%;
+				border-radius: 50%;
+			}
+
+			img {
+				position: relative;
+			}
+
+			img:first-child {
+				right: -120px;
+			}
+
+			img:last-child {
+				left: -65px;
+				top: -135px;
+			}
+		}
+
+		&__cards-box {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			flex-basis: 45%;
 		}
 	}
 }
