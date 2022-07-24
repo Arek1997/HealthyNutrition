@@ -342,6 +342,32 @@ button {
 	}
 }
 
+// ====== Be active2 ======
+
+.be-active2 {
+	background-color: colors.$white;
+	text-align: center;
+
+	&__card {
+		padding: 3em 2em;
+		margin-bottom: 2em;
+		background-color: colors.$background-v2;
+
+		p {
+			margin-bottom: 0;
+		}
+
+		&--two {
+			color: colors.$white;
+			background-color: colors.$leadingColor;
+
+			p {
+				color: inherit;
+			}
+		}
+	}
+}
+
 @import 'small';
 @import 'medium';
 @import 'large';

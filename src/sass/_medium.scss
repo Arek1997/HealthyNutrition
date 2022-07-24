@@ -155,4 +155,28 @@
 			}
 		}
 	}
+
+	.be-active2 {
+		&__text {
+			p {
+				max-width: 780px;
+				margin: 0 auto 3em;
+				line-height: 2;
+			}
+		}
+
+		&__cards-box {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 4rem;
+		}
+
+		&__card {
+			max-width: 400px;
+			flex-basis: 45%;
+			margin-bottom: 0em;
+		}
+	}
 }
