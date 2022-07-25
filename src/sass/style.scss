@@ -456,6 +456,20 @@ button {
 	}
 }
 
+// ====== Footer ======
+.footer {
+	background-color: colors.$textColor;
+	color: colors.$white;
+	text-align: center;
+
+	p {
+		font-size: 1.4rem;
+		a {
+			color: inherit;
+		}
+	}
+}
+
 @import 'small';
 @import 'medium';
 @import 'large';
