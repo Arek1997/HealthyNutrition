@@ -368,6 +368,40 @@ button {
 	}
 }
 
+// ====== Lettuce ======
+.lettuce {
+	&__container {
+		position: relative;
+
+		&::before {
+			content: '';
+			@include mixins.square(50%, 120%);
+			top: -50px;
+			left: 50%;
+			z-index: -1;
+		}
+	}
+
+	&__text {
+		position: relative;
+		max-width: 400px;
+		padding: 2em;
+		background-color: colors.$white;
+		@include mixins.boxShadow;
+		z-index: 5;
+	}
+
+	&__img {
+		position: relative;
+		top: -25px;
+		left: 15px;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
 @import 'small';
 @import 'medium';
 @import 'large';

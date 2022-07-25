@@ -179,4 +179,26 @@
 			margin-bottom: 0em;
 		}
 	}
+
+	.lettuce {
+		&__text {
+			padding: 10em 2em;
+			top: 60px;
+			left: 60px;
+
+			h3 {
+				font-size: 4rem;
+			}
+		}
+
+		&__img {
+			left: 45px;
+
+			img {
+				width: 90%;
+				height: 500px;
+				object-fit: cover;
+			}
+		}
+	}
 }

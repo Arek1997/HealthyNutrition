@@ -132,6 +132,29 @@
 			margin: 0;
 		}
 	}
+
+	.lettuce {
+		&__container {
+			&::before {
+				height: 90%;
+			}
+		}
+
+		&__text {
+			max-width: 460px;
+		}
+
+		&__img {
+			left: 0;
+			top: -300px;
+			text-align: right;
+
+			img {
+				width: 80%;
+				max-width: 820px;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -176,6 +199,22 @@
 
 		&__img {
 			max-width: 500px;
+		}
+	}
+
+	.lettuce {
+		&__container {
+			&::before {
+				width: 20%;
+			}
+		}
+
+		&__text {
+			left: 200px;
+		}
+
+		&__img {
+			left: -100px;
 		}
 	}
 }
