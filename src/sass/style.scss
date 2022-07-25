@@ -17,6 +17,10 @@
 	scroll-padding: 10rem;
 }
 
+html.sr .load-hidden {
+	visibility: hidden;
+}
+
 body {
 	height: 500vh;
 	background-color: colors.$background;
