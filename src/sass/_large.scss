@@ -155,6 +155,24 @@
 			}
 		}
 	}
+
+	.contact {
+		&__img-text {
+			p {
+				font-size: 2.2rem;
+			}
+		}
+
+		&__form {
+			label {
+				font-size: 1.6rem;
+			}
+
+			button {
+				width: 40%;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {

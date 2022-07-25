@@ -34,16 +34,16 @@
 						</button>
 					</div>
 					<div class="nav__menu nav__menu--mobile">
-						<a href="#">Żywienie</a>
-						<a href="#">Soki</a>
-						<a href="#">Porady</a>
-						<a href="#">Kontakt</a>
+						<a href="#be-active">Żywienie</a>
+						<a href="#advices">Porady</a>
+						<a href="#cocktails">Soki</a>
+						<a href="#contact">Kontakt</a>
 					</div>
 					<div class="nav__menu nav__menu--desktop">
-						<a href="#">Żywienie</a>
-						<a href="#">Soki</a>
-						<a href="#">Porady</a>
-						<a href="#">Kontakt</a>
+						<a href="#be-active">Żywienie</a>
+						<a href="#advices">Porady</a>
+						<a href="#cocktails">Soki</a>
+						<a href="#contact">Kontakt</a>
 					</div>
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 		</header>
 
 		<main>
-			<section class="section be-active">
+			<section class="section be-active" id="be-active">
 				<div class="wrapper">
 					<div class="be-active__container">
 						<div class="be-active__text">
@@ -96,7 +96,7 @@
 				</div>
 			</section>
 
-			<section class="section advices">
+			<section class="section advices" id="advices">
 				<div class="wrapper">
 					<div class="advices__container">
 						<div class="advices__img">
@@ -150,7 +150,7 @@
 				</div>
 			</section>
 
-			<section class="section cocktails">
+			<section class="section cocktails" id="cocktails">
 				<div class="wrapper">
 					<div class="cocktails__container">
 						<span class="decoration decoration--circle"></span>
@@ -263,6 +263,59 @@
 								src="dist/img/salat2-lg.jpg"
 								alt="Kolorowa sałatka z dużą ilością warzyw"
 							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section contact" id="contact">
+				<div class="wrapper">
+					<div class="contact__container">
+						<div class="contact__img-text">
+							<img
+								src="dist/img/contact-img.jpg"
+								alt="Uśmiechnięta dziewczyna trzyma zakupy"
+							/>
+							<p class="paragraph">
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco
+								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+								dolor in reprehenderit in voluptate velit esse cillum dolore eu
+								fugiat nulla pariatur.
+							</p>
+						</div>
+						<div class="contact__form">
+							<form>
+								<label for="name">Imię:</label>
+								<input
+									id="name"
+									type="text"
+									placeholder="Podaj imię"
+									required
+								/>
+								<label for="phone">Telefon:</label>
+								<input
+									id="phone"
+									type="number"
+									placeholder="Podaj numer telefonu"
+									required
+								/>
+								<label for="option-select">Pakiety:</label>
+								<select name="option" id="option-select">
+									<option value="default" selected disabled>
+										---Wybierz pakiet---
+									</option>
+									<option value="opcja-1">Opcja 1</option>
+									<option value="opcja-2">Opcja 2</option>
+									<option value="opcja-3">Opcja 3</option>
+								</select>
+								<label for="message">Wiadomość:</label>
+								<textarea
+									name="message"
+									id="message"
+									placeholder="Twoja wiadomość"
+								></textarea>
+								<button class="btn" type="submit">Wyślij</button>
+							</form>
 						</div>
 					</div>
 				</div>

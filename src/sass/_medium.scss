@@ -201,4 +201,38 @@
 			}
 		}
 	}
+
+	.contact {
+		&__container {
+			padding: 3em;
+			display: flex;
+			column-gap: 3rem;
+		}
+
+		&__img-text {
+			flex-basis: 40%;
+			display: flex;
+			flex-direction: column;
+			row-gap: 3rem;
+
+			img {
+				margin-bottom: 0;
+				height: 60%;
+				object-fit: cover;
+			}
+
+			p {
+				font-size: 1.8rem;
+				margin-bottom: 0;
+			}
+		}
+
+		&__form {
+			flex-basis: 60%;
+
+			label {
+				font-size: 1.6rem;
+			}
+		}
+	}
 }

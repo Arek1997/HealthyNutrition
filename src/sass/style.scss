@@ -14,6 +14,7 @@
 :root {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding: 10rem;
 }
 
 body {
@@ -35,6 +36,28 @@ button,
 textarea,
 select {
 	font-family: inherit;
+}
+
+input,
+select,
+textarea {
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid black;
+	margin: 1em 0 3em;
+	padding: 1em;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-size: 1.4rem;
+	font-style: italic;
+}
+
+textarea {
+	resize: vertical;
+	max-height: 500px;
 }
 
 button {
@@ -397,6 +420,37 @@ button {
 		left: 15px;
 
 		img {
+			width: 100%;
+		}
+	}
+}
+
+// ====== Contact ======
+.contact {
+	&__container {
+		padding: 2em;
+		background-color: colors.$white;
+	}
+
+	&__img-text {
+		img {
+			width: 100%;
+			margin-bottom: 1em;
+		}
+
+		p {
+			font-size: 1.6rem;
+		}
+	}
+
+	&__form {
+		label {
+			display: block;
+			font-weight: bold;
+			font-size: 1.4rem;
+		}
+
+		button {
 			width: 100%;
 		}
 	}
