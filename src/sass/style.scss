@@ -116,8 +116,8 @@ button {
 			align-items: center;
 			justify-content: center;
 			background-color: #0e0d0d;
-			clip-path: circle(0% at 100% 0%);
-			transition: clip-path 0.3s ease-in-out;
+			clip-path: circle(0% at 50% 0%);
+			transition: clip-path 0.4s ease-in-out;
 			z-index: -1;
 
 			a {
@@ -125,7 +125,7 @@ button {
 			}
 
 			&--active {
-				clip-path: circle(150% at 100% 0%);
+				clip-path: circle(150% at 50% 0%);
 			}
 		}
 
