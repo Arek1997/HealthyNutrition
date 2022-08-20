@@ -35,6 +35,10 @@ a {
 	text-decoration: none;
 }
 
+.hideNav .nav {
+	transform: translateY(-100%);
+}
+
 input,
 button,
 textarea,
@@ -78,6 +82,7 @@ button {
 	width: 100%;
 	z-index: 100;
 	background-color: #fff;
+	transition: transform 0.5s cubic-bezier(0.8, 0.2, 0.2, 0.8);
 
 	&__container {
 		display: flex;
